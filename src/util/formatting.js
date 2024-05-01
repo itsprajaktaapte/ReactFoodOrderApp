@@ -1,6 +1,6 @@
 
-export const currencyFormatter = new Intl.NumberFormat('en-NZ',{
+export const currencyFormatter = new Intl.NumberFormat('en-US',{
     style : 'currency',
-    currency:'NZD'
+    currency:'USD'
 });
 

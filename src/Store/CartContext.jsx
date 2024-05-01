@@ -22,11 +22,13 @@ const CartContext = createContext({
       {
         const existingItem = state.items[existingCartItemIndex];
 
-        const updatedItem = { ...existingItem, quantity:existingItem.quantity + 1
+        const updatedItem = { ...existingItem, quantity:existingItem.quantity + 1,
         };
       
       updatedItems[existingCartItemIndex] = updatedItem;
-     }else
+     }
+     
+     else
     {
       updatedItems.push({...action.item, quantity: 1});
     }
