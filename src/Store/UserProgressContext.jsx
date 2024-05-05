@@ -18,15 +18,15 @@ export function UserProgressContextProvider({children}) {
   }
 
   function hideCart(){
-    setUserProgress()
+    setUserProgress();
   }
 
  function showCheckout(){
-    setUserProgress('checkout')
+    setUserProgress('checkout');
  }
 
  function hideCheckout(){
-   setUserProgress('')
+   setUserProgress('');
  }
 
  const userProgressCtx = {
